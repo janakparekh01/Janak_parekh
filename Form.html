@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+</head>
+<body>
+<!-- 		Method:get/post
+
+		if method get(default)
+		not secure/display data in URL
+		ONLY 100 CHAR get
+
+		so use only POST method
+
+		<input type="button">
+		<input type="checkbox">
+		<input type="color">
+		<input type="date">
+		<input type="datetime-local">
+		<input type="email">
+		<input type="file">
+		<input type="hidden">
+		<input type="image">
+		<input type="month">
+		<input type="number">
+		<input type="password">
+		<input type="radio">
+		<input type="range">
+		<input type="reset">
+		<input type="search">
+		<input type="submit">
+		<input type="tel">
+		<input type="text">
+		<input type="time">
+		<input type="url">
+		<input type="week"> -->
+
+		<fieldset>
+			<legend>Registration Form</legend>
+			<form action="" method="post" enctype="multipart/form-data">
+				First Name: <input type="text" name="firstname" required>
+				<br>
+
+				Last Name:<input type="text" name="lastname" value="janak">
+				<br>
+
+				User Name:<input type="text" name="username" size="25">
+				<br>
+
+				Email:<input type="email" name="email">
+				<br>
+
+				Password:<input type="password" name="pass">
+				<br>
+
+				D.O.B.:<input type="date" name="dob">
+				<br>
+
+				Time:<input type="time" name="time">
+				<br>
+
+				color:<input type="color" name="color">
+				<br>
+
+				Upload File/image: <input type="file" name="file">
+				<br>
+				<br>
+
+				Date/Time:<input type="datetime-local" name="datetime-local">
+				<br>
+
+				Gender:
+				<br>
+				Male:<input type="radio" name="gender" value="Male">
+				Female:<input type="radio" name="gender" value="Female">
+
+				<br>
+				<br>
+
+				Lang:<br>
+				Hindi:<input type="checkbox" name="lang[]" value="hindi">
+				Gujarati:<input type="checkbox" name="lang[]" value="gujarati">
+				English:<input type="checkbox" name="lang[]" value="English">
+				Other:<input type="checkbox" name="lang[]" value="other">
+
+				<br>
+				Month<input type="month" name="month">
+
+				<br>
+				Mobile:<input type="number" name="Mobile">
+
+				<br>
+				Week:<input type="week" name="week">
+
+				<br>
+				country:
+				<select>
+					<option value="">----select country----</option>
+					<option value="India">India</option>
+					<option value="USA">USA</option>
+					<option value="canada">canada</option>
+					<option value="UK">UK</option>
+					<option value="russia">russia</option>
+				</select><br>
+
+				<br>
+				Address:<textarea name="address" cols="30" rows="5"></textarea>
+
+				<br>
+				Hidden<input type="hidden" name="religion" value="india">
+
+				<br>
+				<br>
+				Image<input type="image" name="image"><br>
+
+				<input type="submit" name="submit" value="Register">
+				<input type="button" name="submit" value="submit">
+				<input type="reset" name="reset">
+			</form>
+		</fieldset>
+</body>
+</html>

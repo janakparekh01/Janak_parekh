@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Internal CSS</title>
+<!-- 
+	CSS
+	Cascading Stle Sheet
+
+	Use for provide style to html content
+	CSS have 3 types
+	1) Inline	
+	2) Internal in head part <style>.....</style>
+	3) External -->
+	<style type="text/css">
+		h1{
+			color: darkred;
+			background-color: aquamarine;
+		}
+
+		h2,h3,h4{
+			color: brown;
+			background-color: darkkhaki;
+			text-align: center;
+		}
+
+		.myclass{
+			text-decoration: underline;
+			text-transform: uppercase;
+			color: darkcyan;
+		}
+
+		.myclass p{
+			text-shadow: 5px 5px red;
+		}
+
+		.mycolor{
+			color: deeppink;
+			background-color: darkblue;
+		}
+
+		#myid{
+			color: lightgrey;
+			background-color: lightpink;
+		}
+
+		h5.test{
+			text-shadow: 2px 2px darkcyan;
+		}
+	</style>
+</head>
+<body>
+	<h1>Hi Hello</h1>
+	<h1>Hi Hello</h1>
+	<h1>Hi Hello</h1>
+
+	<h2>Hi Hello</h2>
+	<h3>Hi Hello</h3>
+	<h4>Hi Hello</h4>
+
+	<!-- Clsses can be assigned to multiple elements on a page or throughout the website -->
+	<div class="myclass mycolor">
+		<p>Hi how are you</p>
+		<p>Hi how are you</p>
+		<p>Hi how are you</p>
+	</div>
+
+	<!-- ID is a specifies to a single element -->
+	<div id="myid">
+		<p>Hi how are you</p>
+		<p>Hi how are you</p>
+		<p>Hi how are you</p>
+	</div>
+
+	<h5 class="test">Hi i am shadow</h5>
+</body>
+</html>
