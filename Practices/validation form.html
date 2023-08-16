@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Validation Form</title>
+</head>
+<body>
+	<fieldset>
+		<legend>Registration Form</legend>
+			<form action="" method="post">
+				<table>
+					<tr>
+						<td>First Name:</td>
+						<td><input type="text" name="Firstname" required></td>
+					</tr>
+
+					<tr>
+						<td>Quantity(Between 1 to 5):</td>
+						<td><input type="number" name="Quantity" min="1" max="5"></td>
+					</tr>
+
+					<tr>
+						<td>Minlength</td>
+						<td><input type="password" name="password" minlength="8"></td>
+					</tr>
+
+					<tr>
+						<td>Maxlenghth</td>
+						<td><input type="password" name="password" maxlength="8"></td>
+					</tr>
+
+					<tr>
+						<td>Email:</td>
+						<td><input type="email" name="email"></td>
+					</tr>
+
+					<tr>
+						<td>Pattern a-z:</td>
+						<td><input type="text" name="Only_alpha" pattern="[a-zA-Z]+" title="Add only alphabetically"></td>
+					</tr>
+
+					<tr>
+						<td>Pattern a-z with minlength maxlength</td>
+						<td><input type="text" name="Only_alpha" pattern="[a-zA-Z]{3,8}" title="add only alphabetically min 3 & max 8"></td>
+					</tr>
+
+					<tr>
+						<td>Number</td>
+						<td><input type="text" name="only_number" pattern="[0-9]{10,11}" title="add only mobile number"></td>
+					</tr>
+
+					<tr>
+						<td><input type="submit" name="submit" value="Register"></td>
+					</tr>
+				</table>
+			</form>
+	</fieldset>
+</body>
+</html>

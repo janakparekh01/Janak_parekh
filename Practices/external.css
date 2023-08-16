@@ -1,0 +1,35 @@
+body{
+	background-image: url("img.jpg");
+}
+
+h1{
+	color: red;
+	background-color: yellow;
+}
+
+h2,h3,h4{
+	color: chocolate;
+	background-color: darkslategray;
+	text-align: center;
+}
+
+.myclass{
+	text-transform: uppercase;
+	text-decoration: overline;
+}
+
+.mycolor{
+	color: cadetblue;
+	background-color: firebrick;
+}
+
+#myid{
+	color: darkmagenta;
+	background-color: gainsboro;
+}
+
+h5.test{
+	color: goldenrod;
+	opacity: 0.3;
+
+}
