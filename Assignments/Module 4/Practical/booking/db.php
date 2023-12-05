@@ -21,12 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $bookingType = $_POST['bookingType'];
 
     // Check if room is available based on the booking type and date range
-    // Replace 'select available rooms' with your actual SQL query
     $query = "SELECT available rooms WHERE check_in_date <= '$checkInDate' AND check_out_date >= '$checkOutDate'";
     $result = mysqli_query($connection, $query);
 
         // Insert the booking details into the database
-        // Replace 'insert booking details' with your actual SQL query
         $query = "INSERT INTO bookings (full_name, check_in_date, check_out_date, booking_type) VALUES ('$fullName', '$checkInDate', '$checkOutDate', '$bookingType')";
         mysqli_query($connection, $query);
 
